@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Briguna Karya</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title1">
+        <img src="BRI Logo.png" width="14%" height="14%">
+        <span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BO Solo Slamet Riyadi</span>
+      </div>
+      <div class="title">SIMULASI BRIGUNA KARYA</div>
+      <div class="content">
+        <form
+          id="formD"
+          name="formD"
+          action=""
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details">Gaji</span>
+              <input
+                type="text"
+                id="gajipokok"
+                placeholder="Masukkan jumlah gaji anda"
+              />
+            </div>
+            <div class="input-box">
+              <span class="details">Max Angsuran</span>
+              <input
+                type="text"
+                id="txtDisplay"
+                placeholder="85% gaji"
+                readonly="readonly"
+              />
+            </div>
+            <div class="input-box">
+              <span class="details1">Simulasi Kredit</span>
+            </div>
+            <div class="input-box">
+              <span class="details">Plafond Pinjaman yang Dikehendaki</span>
+              <input
+                type="text"
+                class="bulan_select"
+                name="pinjaman"
+                id="pinjaman"
+                placeholder="Masukkan jumlah plafond pinjaman"
+              >
+            </div>
+            <div class="input-box">
+              <span class="details">Jangka Waktu (Bulan)</span>
+              <select
+                class="bulan_select"
+                name="bulan"
+                id="bulan"
+                onchange="simulasi()"
+              > 
+                <option value="placeholder">Pilih jangka waktu pembayaran</option>
+                <option value="12">12</option>
+                <option value="24">24</option>
+                <option value="36">36</option>
+                <option value="48">48</option>
+                <option value="60">60</option>
+                <option value="72">72</option>
+                <option value="84">84</option>
+                <option value="96">96</option>
+                <option value="108">108</option>
+                <option value="120">120</option>
+                <option value="132">132</option>
+                <option value="144">144</option>
+                <option value="156">156</option>
+                <option value="168">168</option>
+                <option value="180">180</option>
+              </select>
+            </div>
+            <div class="input-box">
+              <span class="details">Angsuran</span>
+              <input
+                type="text"
+                id="result"
+                placeholder="Jumlah angsuran anda"
+                onchange="simulasi()"
+                readonly="readonly"
+              />
+            </div>
+          </div>
+          <div class="gender-details">
+            <input type="radio" name="gender" id="dot-1" />
+            <input type="radio" name="gender" id="dot-2" />
+            <input type="radio" name="gender" id="dot-3" />
+            <span class="gender-title">* Syarat dan Ketentuan</span>
+            <div class="category">
+              <label for="dot-1">
+                <span class="dot one"></span>
+                <span class="gender">Foto KTP Suami dan Istri</span>
+              </label>
+              <label for="dot-2">
+                <span class="dot two"></span>
+                <span class="gender">Foto Selfie Suami dan Istri</span>
+              </label>
+              <label for="dot-3">
+                <span class="dot three"></span>
+                <span class="gender">Foto Kartu Keluarga</span>
+              </label>
+              <label for="dot-3">
+                <span class="dot three"></span>
+                <span class="gender">Foto Buku Tabungan BRI</span>
+              </label>
+              <label for="dot-3">
+                <span class="dot three"></span>
+                <span class="gender">Foto SK Pangkat Pertama</span>
+              </label>
+              <label for="dot-3">
+                <span class="dot three"></span>
+                <span class="gender">Foto SK Pangkat Terakhir</span>
+              </label>
+              <label for="dot-3">
+                <span class="dot three"></span>
+                <span class="gender">Mengisi form yang disediakan</span>
+              </label>
+              <label for="dot-3">
+                <span class="dot three"></span>
+                <span class="gender">Informasi lebih lanjut hubungi</span>
+              </label>
+              <label for="dot-2">
+                <span class="gender">
+                  <br>RM BRI Solo Slamet Riyadi :
+                  Danang(081329077895) <br> Belinda(085229245255)</span>
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
