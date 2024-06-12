@@ -49,7 +49,7 @@ function simulasi() {
   var nilaiBulan = parseInt(
     selectBulan.options[selectBulan.selectedIndex].text
   );
-  var bungaTahunan = 0.71 / 100;
+  var bungaTahunan = 0.69 / 100;
   var bungaBulanan = bungaTahunan / 1;
 
   const jumlah =
