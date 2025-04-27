@@ -16,7 +16,7 @@ gajipokok = document.getElementById("gajipokok");
 gajipokok.addEventListener("keyup", function (e) {
   gajipokok.value = formatRupiah(this.value, "Rp");
   gajian = unformatRupiah(this.value === "" ? "Rp. 0" : this.value);
-  total = new Intl.NumberFormat("id-ID").format(parseInt(gajian) * 0.85);
+  total = new Intl.NumberFormat("id-ID").format(parseInt(gajian) * 0.825);
   const val = "Rp. " + total;
   document.formD.txtDisplay.value = val;
   simulasi();
