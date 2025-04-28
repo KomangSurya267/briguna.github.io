@@ -16,7 +16,7 @@ gajipokok = document.getElementById("gajipokok");
 gajipokok.addEventListener("keyup", function (e) {
   gajipokok.value = formatRupiah(this.value, "Rp");
   gajian = unformatRupiah(this.value === "" ? "Rp. 0" : this.value);
-  total = new Intl.NumberFormat("id-ID").format(parseInt(gajian) * 0.825);
+  total = new Intl.NumberFormat("id-ID").format(parseInt(gajian) * 0.85);
   const val = "Rp. " + total;
   document.formD.txtDisplay.value = val;
   simulasi();
@@ -49,7 +49,7 @@ function simulasi() {
   var nilaiBulan = parseInt(
     selectBulan.options[selectBulan.selectedIndex].text
   );
-  var bungaTahunan = 0.69 / 100;
+  var bungaTahunan = 0.6875 / 100;
   var bungaBulanan = bungaTahunan / 1;
 
   const jumlah =
